@@ -8,7 +8,7 @@ package Robots;
 public interface EstadoRobot {
     
     /**
-     * Activa el robot desde un estado suspendido.
+     * Activa el robot, continuando sus actividades.
      */
     public void activar();
 
