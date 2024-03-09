@@ -23,7 +23,7 @@ public class ModoServir implements EstadoRobot{
     }
 
     @Override
-    public void tomarOrden(Menu[] listaMenu) {
+    public void tomarOrden(Menu[] listaMenus) {
         
         throw new UnsupportedOperationException("Unimplemented method 'tomarOrden'");
     }
