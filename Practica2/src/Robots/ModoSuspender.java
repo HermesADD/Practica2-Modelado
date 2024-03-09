@@ -1,5 +1,5 @@
 package Robots;
-import Hamburguesa.*;
+
 import Menu.*;
 
 /**
@@ -27,7 +27,7 @@ public class ModoSuspender implements EstadoRobot{
      */
     @Override
     public void atender() {
-        System.out.println("El robot ha sido activado."); 
+        System.out.println("El robot ha activado. \n " + "Se cambia al modo caminar.");
         this.robot.asignarEstado(this.robot.getModoAtender());
     }
 

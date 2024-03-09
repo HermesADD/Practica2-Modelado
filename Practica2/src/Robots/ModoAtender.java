@@ -52,9 +52,11 @@ public class ModoAtender implements EstadoRobot{
     }
 
     /**
-     * Toma la orden de un cliente mostrando primero el menú y luego cambiando al estado cocinar.
+     * Toma la orden de un cliente mostrando primero el menú y luego 
+     * cambiando al estado cocinar.
      * 
-     * @param listaMenus Arreglo que contiene los menús disponibles para mostrar al cliente.
+     * @param listaMenus Arreglo que contiene los menús disponibles 
+     * para mostrar al cliente.
      */
     @Override
     public void tomarOrden(Menu[] listaMenus) {

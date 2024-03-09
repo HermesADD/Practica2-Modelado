@@ -49,13 +49,17 @@ public class ModoCaminar implements EstadoRobot{
      * Una vez que el robot llega, cambia su estado al modo atender.
      */
     @Override
-    public void caminar(){
+    public void caminar() {
+        // Verifica si el robot ha llegado hacia el cliente
         if (!robot.getMesaCliente()) {
+            // Reduce la distancia entre el robot y el cliente
             robot.reducirDistancia();
+            // Muestra un mensaje indicando que el robot se está acercando
             System.out.println("El robot se está acercando.");
         } else {
-            System.out.println("El robot ha llegado.\n" +
-                                "Se cambia al modo atender.");
+            // Muestra un mensaje indicando que el robot ha llegado hacia el cliente
+            System.out.println("El robot ha llegado. \nSe cambia al modo atender.");
+            // Cambia el estado del robot al modo atender
             robot.asignarEstado(robot.getModoAtender());
         }
     }
@@ -97,4 +101,3 @@ public class ModoCaminar implements EstadoRobot{
     }
 
 }
-
