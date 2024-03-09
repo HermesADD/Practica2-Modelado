@@ -1,5 +1,3 @@
-package Robots;
-
 public class ModoActivar implements EstadoRobot{
 
     @Override

@@ -1,5 +1,3 @@
-package Robots;
-
 /**
  * La Interfaz EstadoRobot define los métodos que deben ser implementados por los 
  * diferentes estados de un robot. Estos métodos corresponden a las acciones que 

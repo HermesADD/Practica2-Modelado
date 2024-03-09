@@ -1,5 +1,3 @@
-package Robots;
-
 public class ModoCaminar implements EstadoRobot{
 
     @Override
