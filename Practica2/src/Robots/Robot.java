@@ -80,9 +80,9 @@ public class Robot {
     /**
     * Indica que un cliente ha llamado al Robot
     */
-    public void llamar(){
+    public void atender(){
         imprimeEstado();
-        estadoActual.llamar();
+        estadoActual.atender();
     }
 
     /**

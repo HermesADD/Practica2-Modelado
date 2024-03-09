@@ -54,7 +54,7 @@ public class Practica2 {
             }
             switch (opcion) {
                 case 1:
-                    robot.llamar();
+                    robot.atender();
                     break;
                 case 2:
                     robot.caminar();

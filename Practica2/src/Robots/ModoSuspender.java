@@ -2,60 +2,87 @@ package Robots;
 import Hamburguesa.*;
 import Menu.*;
 
+/**
+ * Clase que implementa el estado suspendido de un robot.
+ * En este estado, el robot está inactivo y espera ser activado.
+ */
 public class ModoSuspender implements EstadoRobot{
 
-    /**
-    * Robot referencia
-    */
+    // Referencia al robot que está en estado suspendido.
     private Robot robot;
-        
+
     /**
-     * Constructor Estado
+     * Constructor para el estado suspendido del robot.
+     * 
+     * @param robot El robot que se va a suspender.
      */
     public ModoSuspender(Robot robot){
         this.robot = robot;
     }
 
+    /**
+     * Activa el robot desde su estado suspendido.
+     * Se imprime un mensaje indicando que el robot se ha activado 
+     * y se actualiza su estado.
+     */
     @Override
-    public void llamar() {
-
-        throw new UnsupportedOperationException("Unimplemented method 'activar'");
+    public void atender() {
+        System.out.println("El robot ha sido activado."); 
+        this.robot.asignarEstado(this.robot.getModoAtender());
     }
 
+    /**
+     * Mantiene al robot en su estado suspendido.
+     * Imprime un mensaje indicando que el robot ya está suspendido.
+     */
     @Override
     public void suspender() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'suspender'");
+        System.out.println("El robot ya se encuentra suspendido.");
     }
 
+    /**
+     * Impide que el robot camine mientras está suspendido.
+     * Imprime un mensaje indicando que la acción no es posible.
+     */
     @Override
     public void caminar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'caminar'");
+        System.out.println("El robot no puede caminar mientras se encuentra suspendido.");
     }
 
+    /**
+     * Impide que el robot tome órdenes mientras está suspendido.
+     * Imprime un mensaje indicando que la acción no es posible.
+     */
     @Override
     public void tomarOrden(Menu[] listaMenus) {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'tomarOrden'");
+        System.out.println("El robot no puede tomar ordenes mientras se encuentra suspendido.");
     }
 
+    /**
+     * Impide que el robot cocine mientras está suspendido.
+     * Imprime un mensaje indicando que la acción no es posible.
+     */
     @Override
     public void cocinar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'cocinar'");
+        System.out.println("El robot no puede cocinar mientras se encuentra suspendido.");
     }
 
+    /**
+     * Impide que el robot sirva mientras está suspendido.
+     * Imprime un mensaje indicando que la acción no es posible.
+     */
     @Override
     public void servir() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'servir'");
+        System.out.println("El robot no puede servir mientras se encuentra suspendido.");
     }
 
+    /**
+     * Imprime el estado actual del robot.
+     * Indica que el robot está suspendido.
+     */
     @Override
     public void imprimirEstado() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'imprimirEstado'");
+        System.out.println("El robot se encuentra actualmente suspendido.");
     }
     
 }

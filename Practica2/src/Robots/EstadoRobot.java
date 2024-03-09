@@ -1,6 +1,5 @@
 package Robots;
 
-import Hamburguesa.*;
 import Menu.*;
 
 /**
@@ -13,7 +12,7 @@ public interface EstadoRobot {
     /**
      * Activa el robot, continuando sus actividades.
      */
-    public void llamar();
+    public void atender();
 
     /**
      * Suspende el robot, deteniendo sus actividades.

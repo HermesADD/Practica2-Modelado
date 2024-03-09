@@ -1,5 +1,5 @@
 package Robots;
-import Hamburguesa.*;
+
 import Menu.*;
 
 public class ModoCocinar implements EstadoRobot{
@@ -17,7 +17,7 @@ public class ModoCocinar implements EstadoRobot{
     }
 
     @Override
-    public void llamar() {
+    public void atender() {
         
         throw new UnsupportedOperationException("Unimplemented method 'activar'");
     }
