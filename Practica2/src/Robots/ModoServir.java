@@ -1,4 +1,6 @@
 package Robots;
+import Hamburguesa.*;
+import Menu.*;
 
 public class ModoServir implements EstadoRobot{
 
@@ -21,7 +23,7 @@ public class ModoServir implements EstadoRobot{
     }
 
     @Override
-    public void tomarOrden() {
+    public void tomarOrden(Menu[] listaMenu) {
         
         throw new UnsupportedOperationException("Unimplemented method 'tomarOrden'");
     }

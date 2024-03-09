@@ -1,5 +1,8 @@
 package Robots;
 
+import Hamburguesa.*;
+import Menu.*;
+
 /**
  * La Interfaz EstadoRobot define los métodos que deben ser implementados por los 
  * diferentes estados de un robot. Estos métodos corresponden a las acciones que 
@@ -25,8 +28,7 @@ public interface EstadoRobot {
     /**
      * Permite al robot tomar la orden de un cliente.
      */
-    // public void tomarOrden(Menu[] listaMenus);
-    public void tomarOrden();
+    public void tomarOrden(Menu[] listaMenus);
 
     /**
      * Inicia el proceso de cocinar un platillo.
