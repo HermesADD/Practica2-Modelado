@@ -13,7 +13,7 @@ public interface EstadoRobot {
     /**
      * Activa el robot, continuando sus actividades.
      */
-    public void activar();
+    public void llamar();
 
     /**
      * Suspende el robot, deteniendo sus actividades.

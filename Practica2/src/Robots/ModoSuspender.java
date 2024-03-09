@@ -4,14 +4,20 @@ import Menu.*;
 
 public class ModoSuspender implements EstadoRobot{
 
-    // private Robot robot;
-
-    // public ModoSuspender(Robot robot){
-        // this.robot = robot;
-    // }
+    /**
+    * Robot referencia
+    */
+    private Robot robot;
+        
+    /**
+     * Constructor Estado
+     */
+    public ModoSuspender(Robot robot){
+        this.robot = robot;
+    }
 
     @Override
-    public void activar() {
+    public void llamar() {
 
         throw new UnsupportedOperationException("Unimplemented method 'activar'");
     }

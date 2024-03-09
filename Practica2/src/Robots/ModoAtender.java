@@ -1,13 +1,22 @@
 package Robots;
-import Hamburguesa.*;
+
 import Menu.*;
 
-
-public class ModoActivar implements EstadoRobot{
-
-    @Override
-    public void activar() {
+public class ModoAtender implements EstadoRobot { 
+    /**
+    * Robot referencia
+    */
+    private Robot robot;
         
+    /**
+     * Constructor Estado
+     */
+    public ModoAtender(Robot robot){
+        this.robot = robot;
+    }
+    
+    @Override
+    public void llamar() {
         throw new UnsupportedOperationException("Unimplemented method 'activar'");
     }
 
@@ -46,5 +55,6 @@ public class ModoActivar implements EstadoRobot{
         
         throw new UnsupportedOperationException("Unimplemented method 'imprimirEstado'");
     }
+    
     
 }

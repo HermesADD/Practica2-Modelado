@@ -107,7 +107,7 @@ public class Hamburguesa {
     /**
     * Muestra el proceso de preparacion de la hamburguesa segun su receta
     */
-   public void prepararPlatillo(){
+   public void prepararHamburguesa(){
       receta.recetaPreparada(tieneQueso());
    }
 

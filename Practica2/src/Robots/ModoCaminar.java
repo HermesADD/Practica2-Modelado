@@ -4,8 +4,20 @@ import Menu.*;
 
 public class ModoCaminar implements EstadoRobot{
 
+    /**
+    * Robot referencia
+    */
+    private Robot robot;
+        
+    /**
+     * Constructor Estado
+     */
+    public ModoCaminar(Robot robot){
+        this.robot = robot;
+    }
+
     @Override
-    public void activar() {
+    public void llamar() {
         
         throw new UnsupportedOperationException("Unimplemented method 'activar'");
     }
