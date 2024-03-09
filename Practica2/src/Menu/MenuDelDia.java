@@ -26,7 +26,7 @@ public class MenuDelDia extends Menu{
    /**
     * Cadena que representa la descripcion del menu
     */
-   private String descripcion = "Nuestra eleccion especial para ti, cada dia te sorprendemos con algo nuevo!!!";
+   private String descripcion = "Nuestra eleccion especial para ti, cada dia tenemos algo diferente!!!";
 
    /**
     * Constructor del menu del dia
