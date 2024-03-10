@@ -30,7 +30,7 @@ public class ModoAtender implements EstadoRobot {
         System.out.println("Te leere nuestro menu:");
         robot.leerMenu(listaMenus);
         robot.tomarOrden(listaMenus);
-        System.out.println("Pasando al " + AnsiColors.ORANGE + "MODO COCINAR" + AnsiColors.RESET);
+        System.out.println(" Pasando al " + AnsiColors.ORANGE + "MODO COCINAR" + AnsiColors.RESET);
         robot.asignarEstado(robot.getModoCocinar());
     }
 

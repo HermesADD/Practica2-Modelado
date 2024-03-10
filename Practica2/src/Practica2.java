@@ -23,7 +23,7 @@ public class Practica2 {
         Scanner scn = new Scanner(System.in);
         int opcion;
 
-        System.out.println("Bienvenido a McBurguesas, te presento a Robotsin,nuestro primer robot cocinero-mesero" +
+        System.out.println("Bienvenido a McBurguesas, te presento a Robotsin, nuestro primer robot cocinero-mesero" +
                             "\nPor favor, indique que accion quiere que nuestro empleado estrella realice.");
         robot.imprimeEstado();
 
