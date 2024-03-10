@@ -51,7 +51,7 @@ public class ModoAtender implements EstadoRobot {
 
     @Override
     public void imprimirEstado(){
-        System.out.println("### MODO ATENCION ###");
+        System.out.println(AnsiColors.GREEN + " # MODO ATENCION # " + AnsiColors.RESET);
     }
 
 }

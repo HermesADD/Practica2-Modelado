@@ -56,7 +56,7 @@ public class ModoCaminar implements EstadoRobot{
 
     @Override
     public void imprimirEstado(){
-        System.out.println("### MODO CAMINATA ###");
+        System.out.println(AnsiColors.PURPLE + " # MODO CAMINATA # " + AnsiColors.RESET);
     }
     
 }

@@ -49,7 +49,7 @@ public class ModoServir implements EstadoRobot{
 
     @Override
     public void imprimirEstado(){
-        System.out.println("### MODO SERVIR ###");
+        System.out.println(AnsiColors.BLUE + " # MODO SERVIR # " + AnsiColors.RESET);
     }
     
 }

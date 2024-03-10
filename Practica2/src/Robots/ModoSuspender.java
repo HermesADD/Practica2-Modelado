@@ -3,7 +3,7 @@ import Hamburguesa.*;
 import Menu.*;
 
 public class ModoSuspender implements EstadoRobot{
-
+    
     /**
     * Robot referencia
     */
@@ -52,7 +52,7 @@ public class ModoSuspender implements EstadoRobot{
 
     @Override
     public void imprimirEstado() {
-        System.out.println("### MODO SUSPENDIDO ###");
+        System.out.println(AnsiColors.RED + " # MODO SUSPENDIDO # " + AnsiColors.RESET);
     }
     
 }

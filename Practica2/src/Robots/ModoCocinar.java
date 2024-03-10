@@ -51,7 +51,7 @@ public class ModoCocinar implements EstadoRobot{
 
     @Override
     public void imprimirEstado(){
-        System.out.println("### MODO COCINAR ###");
+        System.out.println(AnsiColors.ORANGE + " # MODO COCINAR # " + AnsiColors.RESET);
     }
     
 }
