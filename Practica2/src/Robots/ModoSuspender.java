@@ -8,6 +8,13 @@ import Menu.*;
  */
 public class ModoSuspender implements EstadoRobot{
 
+    // Códigos de colores ANSI
+    private static final String RESET = "\u001B[0m";
+
+    private static final String GREEN = "\u001B[31m";
+    private static final String GRAY = "\u001B[37m";
+    private static final String BOLD = "\u001B[1m";
+
     // Referencia al robot que esta en estado suspendido.
     private Robot robot;
 
@@ -28,7 +35,7 @@ public class ModoSuspender implements EstadoRobot{
     @Override
     public void atender() {
         System.out.println("El robot ha activado. \n " + "Se cambia al modo caminar.");
-        this.robot.asignarEstado(this.robot.getModoAtender());
+        this.robot.asignarEstado(this.robot.getModoCaminar());
     }
 
     /**
@@ -82,7 +89,9 @@ public class ModoSuspender implements EstadoRobot{
      */
     @Override
     public void imprimirEstado() {
-        System.out.println("El robot se encuentra actualmente suspendido.");
+        System.out.println(GRAY + "Robot Suspendido" + RESET);
+        System.out.println(BOLD + "Robot Suspendido" + RESET);
+        System.out.println(GREEN + "Robot Suspendido" + RESET);
     }
     
 }

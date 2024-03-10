@@ -70,7 +70,7 @@ public class ModoCaminar implements EstadoRobot{
      */
     @Override
     public void tomarOrden(Menu[] listaMenus) {
-        System.out.println("El robot no se puede tomar la orden mientras camina.");
+        System.out.println("El robot no puede tomar la orden mientras camina.");
     }
 
     /**
