@@ -28,7 +28,7 @@ public class ModoCaminar implements EstadoRobot{
             System.out.println("Cada vez estoy mas cerca.");
         } else {
             System.out.println("He llegado.\n" +
-                                "Cambiando a MODO ATENDER.");
+                                "Cambiando a " + AnsiColors.GREEN + "MODO ATENDER" + AnsiColors.RESET);
             robot.asignarEstado(robot.getModoAtender());
         }
     }

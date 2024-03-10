@@ -3,7 +3,7 @@ import Hamburguesa.*;
 import Menu.*;
 
 public class ModoSuspender implements EstadoRobot{
-    
+
     /**
     * Robot referencia
     */
@@ -20,7 +20,7 @@ public class ModoSuspender implements EstadoRobot{
     public void llamar() {
         robot.nuevoCliente();
         System.out.println("He sido activado!!"
-            + "\n Entrando al MODO CAMINATA");
+            + "\n Entrando al " + AnsiColors.PURPLE + "MODO CAMINATA" + AnsiColors.RESET);
         robot.asignarEstado(robot.getModoCaminar());
     }
 

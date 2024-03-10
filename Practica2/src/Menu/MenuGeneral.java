@@ -3,6 +3,7 @@ package Menu;
 import java.util.Iterator;
 
 import Hamburguesa.*;
+import Robots.AnsiColors;
 
 public class MenuGeneral extends Menu{
 
@@ -29,7 +30,7 @@ public class MenuGeneral extends Menu{
    /**
     * Cadena que representa la descripcion del menu
     */
-   private String descripcion = "Nuestras hamburguesas clasicas, servidas todos los dias del ano!!!";
+   private String descripcion = "Nuestras hamburguesas clasicas, servidas todos los dias del anio!!!";
 
    /**
     * Constructor del menu general
@@ -68,7 +69,7 @@ public class MenuGeneral extends Menu{
 
    @Override
    public void imprimirMenu(){
-      System.out.println("####" + getNombre() + "####"
+      System.out.println(AnsiColors.BROWN + "\n ##" + getNombre() + "##" + AnsiColors.RESET
          + "\n [" + getDescripcion() + "]");
    }
 

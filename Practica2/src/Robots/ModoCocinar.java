@@ -35,7 +35,7 @@ public class ModoCocinar implements EstadoRobot{
     public void cocinar(){
         System.out.println("Es hora de cocinar.");
         robot.prepararHamburguesa();
-        System.out.println("Cambiando a modo SERVIR.");
+        System.out.println("Cambiando a modo " + AnsiColors.BLUE + "MODO SERVIR" + AnsiColors.RESET);
         robot.asignarEstado(robot.getModoServir());
     }
 

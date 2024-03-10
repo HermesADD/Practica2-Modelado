@@ -1,10 +1,9 @@
 package Menu;
 
 import java.util.Iterator;
-
-import Hamburguesa.*;
-
 import java.util.Hashtable;
+import Hamburguesa.*;
+import Robots.AnsiColors;
 
 /**
 * Clase menu especial
@@ -69,7 +68,7 @@ public class MenuEspecial extends Menu{
 
     @Override
     public void imprimirMenu(){
-        System.out.println("###MENU ESPECIAL###" 
+        System.out.println(AnsiColors.YELLOW + "\n ##MENU ESPECIAL##" + AnsiColors.RESET
           + "\n [" + getDescripcion() + "]");
     }
 

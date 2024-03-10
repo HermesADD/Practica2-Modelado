@@ -43,7 +43,7 @@ public class ModoServir implements EstadoRobot{
     @Override
     public void servir(){
         System.out.println("Aqui esta tu platillo. Buen provecho!" +
-                            "\nEntrando en MODO SUSPENDIDO");
+                            "\n Entrando en " + AnsiColors.RED +  "MODO SUSPENDIDO" + AnsiColors.RESET);
         robot.asignarEstado(robot.getModoSuspender());
     }
 

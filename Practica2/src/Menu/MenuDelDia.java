@@ -3,6 +3,7 @@ package Menu;
 import java.util.ArrayList;
 import java.util.Iterator;
 import Hamburguesa.*;
+import Robots.AnsiColors;
 
 /**
  * Clase MenuDelDia
@@ -60,7 +61,7 @@ public class MenuDelDia extends Menu{
 
    @Override
    public void imprimirMenu(){
-      System.out.println("####" + getNombre() + "####"
+      System.out.println(AnsiColors.CORAL + "\n ##" + getNombre() + "##" + AnsiColors.RESET
          + "\n [" + getDescripcion() + "]");
    }
 
