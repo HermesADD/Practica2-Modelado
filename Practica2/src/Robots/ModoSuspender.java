@@ -18,44 +18,41 @@ public class ModoSuspender implements EstadoRobot{
 
     @Override
     public void llamar() {
-
-        throw new UnsupportedOperationException("Unimplemented method 'activar'");
-    }
-
-    @Override
-    public void suspender() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'suspender'");
+        robot.nuevoCliente();
+        System.out.println("He sido activado!!"
+            + "\n Entrando al MODO CAMINATA");
+        robot.asignarEstado(robot.getModoCaminar());
     }
 
     @Override
     public void caminar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'caminar'");
+        System.out.println("Aun no puedo moverme, estoy suspendido");
     }
 
     @Override
     public void tomarOrden(Menu[] listaMenus) {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'tomarOrden'");
+        System.out.println("Aun no puedo tomar la orden, estoy suspendido");
     }
 
     @Override
     public void cocinar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'cocinar'");
+        System.out.println("Aun no puedo cocinar, estoy suspendido");
     }
 
     @Override
+    public void suspender() {
+        System.out.println("Ya estoy suspendido");
+    }
+
+
+    @Override
     public void servir() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'servir'");
+        System.out.println("Aun no puedo servir, estoy suspendido");
     }
 
     @Override
     public void imprimirEstado() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'imprimirEstado'");
+        System.out.println("### MODO SUSPENDIDO ###");
     }
     
 }

@@ -62,8 +62,8 @@ public class Robot {
      */
     public Robot(){
       modoSuspender = new ModoSuspender(this);
-      modoCaminar = new ModoAtender(this);
-      modoAtender = new ModoCocinar(this);
+      modoCaminar = new ModoCaminar(this);
+      modoAtender = new ModoAtender(this);
       modoCocinar = new ModoCocinar(this);
       modoServir = new ModoServir(this);
 

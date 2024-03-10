@@ -17,45 +17,46 @@ public class ModoCaminar implements EstadoRobot{
     }
 
     @Override
-    public void llamar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'activar'");
+    public void llamar(){
+        System.out.println("Estoy caminando");
     }
 
     @Override
-    public void suspender() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'suspender'");
+    public void caminar(){
+        if (!robot.getMesaCliente()) {
+            robot.reducirDistancia();
+            System.out.println("Cada vez estoy mas cerca.");
+        } else {
+            System.out.println("He llegado.\n" +
+                                "Cambiando a MODO ATENDER.");
+            robot.asignarEstado(robot.getModoAtender());
+        }
     }
 
     @Override
-    public void caminar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'caminar'");
+    public void tomarOrden(Menu[] listaMenus){
+        System.out.println("Estoy caminando, no puedo tomar orden");
     }
 
     @Override
-    public void tomarOrden(Menu[] listaMenus) {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'tomarOrden'");
+    public void cocinar(){
+        System.out.println("Estoy caminando, no puedo cocinar");
     }
 
     @Override
-    public void cocinar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'cocinar'");
+    public void suspender(){
+        System.out.println("Regresando a modo suspendido");
+        robot.asignarEstado(robot.getModoSuspender());
     }
 
     @Override
-    public void servir() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'servir'");
+    public void servir(){
+        System.out.println("Estoy caminando, no puedo servir");
     }
 
     @Override
-    public void imprimirEstado() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'imprimirEstado'");
+    public void imprimirEstado(){
+        System.out.println("### MODO CAMINATA ###");
     }
     
 }

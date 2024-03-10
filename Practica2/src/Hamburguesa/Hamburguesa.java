@@ -113,10 +113,10 @@ public class Hamburguesa {
 
    public void imprimir(){
       String info = "ID: " + getID() 
-      + "\n Nombre: " + getNombre()
-      + "\n Precio: " + getPrecio();
+      + ", Nombre: " + getNombre()
+      + ", Precio: " + getPrecio();
       if(esVegetariano()){
-         info += "\n (Vegetariana)";
+         info += ",(Vegetariana)";
       }
       System.out.println(info);
    }

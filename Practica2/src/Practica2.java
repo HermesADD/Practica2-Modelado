@@ -72,7 +72,7 @@ public class Practica2 {
                     robot.suspender();
                     break;
                 case 0:
-                    System.out.println("Te esperamos pronto, ojala para la proxima si dejes propina. :(");
+                    System.out.println("Vuelve pronto!!!");
                     break;
                 default:
                     System.out.println("\nOpcion invalida");

@@ -17,45 +17,41 @@ public class ModoCocinar implements EstadoRobot{
     }
 
     @Override
-    public void llamar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'activar'");
+    public void llamar(){
+        System.out.println("Estoy cocinando, no me llames");
     }
 
     @Override
-    public void suspender() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'suspender'");
+    public void caminar(){
+        System.out.println("Estoy cocinando, no puedo caminar");
     }
 
     @Override
-    public void caminar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'caminar'");
+    public void tomarOrden(Menu[] listaMenus){
+        System.out.println("Estoy cocinando, no puedo tomar orden");
     }
 
     @Override
-    public void tomarOrden(Menu[] listaMenus) {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'tomarOrden'");
+    public void cocinar(){
+        System.out.println("Es hora de cocinar.");
+        robot.prepararHamburguesa();
+        System.out.println("Cambiando a modo SERVIR.");
+        robot.asignarEstado(robot.getModoServir());
     }
 
     @Override
-    public void cocinar() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'cocinar'");
+    public void suspender(){
+        System.out.println("Estoy cocinando, no me puedo suspender");
     }
 
     @Override
-    public void servir() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'servir'");
+    public void servir(){
+        System.out.println("Estoy cocinando, no puedo servir.");
     }
 
     @Override
-    public void imprimirEstado() {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'imprimirEstado'");
+    public void imprimirEstado(){
+        System.out.println("### MODO COCINAR ###");
     }
     
 }
