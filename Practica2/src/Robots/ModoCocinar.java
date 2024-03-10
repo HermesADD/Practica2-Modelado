@@ -11,7 +11,7 @@ import Menu.*;
  */
 public class ModoCocinar implements EstadoRobot{
 
-    // Referencia al robot que está en estado cocinar.
+    // Referencia al robot que esta en estado cocinar.
     private Robot robot;
 
     /**
@@ -25,7 +25,7 @@ public class ModoCocinar implements EstadoRobot{
 
     /**
      * Impide que el robot atienda mientras cocina.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void atender() {
@@ -34,7 +34,7 @@ public class ModoCocinar implements EstadoRobot{
 
     /**
      * Impide que el robot se suspenda mientras cocina.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void suspender() {
@@ -43,7 +43,7 @@ public class ModoCocinar implements EstadoRobot{
 
     /**
      * Impide que el robot camine mientras cocina.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void caminar() {
@@ -51,8 +51,8 @@ public class ModoCocinar implements EstadoRobot{
     }
 
     /**
-     * Impide que el robot tome órdenes mientras cocina.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Impide que el robot tome ordenes mientras cocina.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void tomarOrden(Menu[] listaMenus) {
@@ -60,8 +60,8 @@ public class ModoCocinar implements EstadoRobot{
     }
 
     /**
-     * Realiza la acción de cocinar del robot.
-     * Inicia el proceso de preparación de la hamburguesa, 
+     * Realiza la accion de cocinar del robot.
+     * Inicia el proceso de preparacion de la hamburguesa, 
      * una vez finalizado, se cambia el estado a servir.
      */
     @Override
@@ -69,7 +69,7 @@ public class ModoCocinar implements EstadoRobot{
         // Indica el inicio del proceso de cocinar
         System.out.println("El robot comienza a cocinar.");
         
-        // Llama al método para preparar la hamburguesa
+        // Llama al metodo para preparar la hamburguesa
         robot.prepararHamburguesa();
         
         // Indica que el proceso de cocinar termino y cambia a servir
@@ -79,16 +79,16 @@ public class ModoCocinar implements EstadoRobot{
 
     /**
      * Impide que el robot sirva mientras cocina.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void servir() {
-        System.out.println("El robot se encuentra en cocinando la orden, no puede servirla aún.");
+        System.out.println("El robot se encuentra en cocinando la orden, no puede servirla aun.");
     }
 
     /**
      * Imprime el estado actual del robot.
-     * Indica que el robot está en modo cocinar.
+     * Indica que el robot esta en modo cocinar.
      */
     @Override
     public void imprimirEstado() {

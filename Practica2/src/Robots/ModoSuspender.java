@@ -4,11 +4,11 @@ import Menu.*;
 
 /**
  * Clase que implementa el estado suspendido de un robot.
- * En este estado, el robot está inactivo y espera ser activado.
+ * En este estado, el robot esta inactivo y espera ser activado.
  */
 public class ModoSuspender implements EstadoRobot{
 
-    // Referencia al robot que está en estado suspendido.
+    // Referencia al robot que esta en estado suspendido.
     private Robot robot;
 
     /**
@@ -33,7 +33,7 @@ public class ModoSuspender implements EstadoRobot{
 
     /**
      * Mantiene al robot en su estado suspendido.
-     * Imprime un mensaje indicando que el robot ya está suspendido.
+     * Imprime un mensaje indicando que el robot ya esta suspendido.
      */
     @Override
     public void suspender() {
@@ -41,8 +41,8 @@ public class ModoSuspender implements EstadoRobot{
     }
 
     /**
-     * Impide que el robot camine mientras está suspendido.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Impide que el robot camine mientras esta suspendido.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void caminar() {
@@ -50,8 +50,8 @@ public class ModoSuspender implements EstadoRobot{
     }
 
     /**
-     * Impide que el robot tome órdenes mientras está suspendido.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Impide que el robot tome ordenes mientras esta suspendido.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void tomarOrden(Menu[] listaMenus) {
@@ -59,8 +59,8 @@ public class ModoSuspender implements EstadoRobot{
     }
 
     /**
-     * Impide que el robot cocine mientras está suspendido.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Impide que el robot cocine mientras esta suspendido.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void cocinar() {
@@ -68,8 +68,8 @@ public class ModoSuspender implements EstadoRobot{
     }
 
     /**
-     * Impide que el robot sirva mientras está suspendido.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Impide que el robot sirva mientras esta suspendido.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void servir() {
@@ -78,7 +78,7 @@ public class ModoSuspender implements EstadoRobot{
 
     /**
      * Imprime el estado actual del robot.
-     * Indica que el robot está suspendido.
+     * Indica que el robot esta suspendido.
      */
     @Override
     public void imprimirEstado() {

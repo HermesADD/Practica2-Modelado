@@ -1,10 +1,10 @@
 package Robots;
 
-import Menu.Menu;
+import Menu.*;
 
 /**
  * Clase que implementa el estado activo de un robot.
- * En este estado, el robot está activo para realizar acciones.
+ * En este estado, el robot esta activo para realizar acciones.
  *
  * @author Hermes
  * @author Steve
@@ -12,7 +12,7 @@ import Menu.Menu;
  */
 public class ModoAtender implements EstadoRobot{
 
-    // Referencia al robot que está en estado activo.
+    // Referencia al robot que esta en estado activo.
     private Robot robot;
 
     /**
@@ -26,7 +26,7 @@ public class ModoAtender implements EstadoRobot{
 
     /**
      * Mantiene al robot en su estado atender.
-     * Imprime un mensaje indicando que el robot ya está atendiendo.
+     * Imprime un mensaje indicando que el robot ya esta atendiendo.
      */
     @Override
     public void atender() {
@@ -35,7 +35,7 @@ public class ModoAtender implements EstadoRobot{
 
     /**
      * Impide que el robot se suspenda mientras se atiende.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void suspender() {
@@ -44,7 +44,7 @@ public class ModoAtender implements EstadoRobot{
 
     /**
      * Impide que el robot camine mientras se atiende.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void caminar() {
@@ -52,15 +52,15 @@ public class ModoAtender implements EstadoRobot{
     }
 
     /**
-     * Toma la orden de un cliente mostrando primero el menú y luego 
+     * Toma la orden de un cliente mostrando primero el menu y luego 
      * cambiando al estado cocinar.
      * 
-     * @param listaMenus Arreglo que contiene los menús disponibles 
+     * @param listaMenus Arreglo que contiene los menus disponibles 
      * para mostrar al cliente.
      */
     @Override
     public void tomarOrden(Menu[] listaMenus) {
-        // Muestra el menú al cliente
+        // Muestra el menu al cliente
         System.out.println("El robot muestra el menu");
         robot.leerMenu(listaMenus);
         
@@ -74,7 +74,7 @@ public class ModoAtender implements EstadoRobot{
 
     /**
      * Impide que el robot cocine mientras atiende.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void cocinar() {
@@ -83,7 +83,7 @@ public class ModoAtender implements EstadoRobot{
 
     /**
      * Impide que el robot sirva mientras atiende.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void servir() {
@@ -92,7 +92,7 @@ public class ModoAtender implements EstadoRobot{
 
     /**
      * Imprime el estado actual del robot.
-     * Indica que el robot está en modo atender.
+     * Indica que el robot esta en modo atender.
      */
     @Override
     public void imprimirEstado() {

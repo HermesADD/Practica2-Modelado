@@ -146,8 +146,8 @@ public class Robot {
     /**
     * Indica si el robot se encuentra en la mesa del cliente
     *
-    * @return   true    -   si está en la mesa del cliente
-    *           false   -   si no está en la mesa del cliente
+    * @return   true    -   si esta en la mesa del cliente
+    *           false   -   si no esta en la mesa del cliente
     */
     public boolean getMesaCliente() {
         if (cliente.getDistancia() > 0) {
@@ -189,13 +189,13 @@ public class Robot {
 
     /**
     * Valida que el ID recibido pertenezca a una hamburguesa existente, en caso de
-    * que sí exista, se guardan como la orden a preparar
+    * que si exista, se guardan como la orden a preparar
     *
     * @param id ID de la hamburguesa que se quiere buscar
     * @param listaMenus Lista de los menus en los que se buscara el id
     *
-    * @return   true    -   sí existe el ID
-    *           false   -   sí ningún platillo tiene ese ID
+    * @return   true    -   si existe el ID
+    *           false   -   si ningun platillo tiene ese ID
     */
     public boolean validarID(int id, Menu[] listaMenus){
         Iterator iterador = new IteradorArreglo(listaMenus);
@@ -218,7 +218,7 @@ public class Robot {
     }
 
     /**
-    * El Robot toma la orden del cliente, verificando que sea una id válido
+    * El Robot toma la orden del cliente, verificando que sea una id valido
     *
     * @param listaMenus Lista de menus entre los que se puede tomar una orden
     */
@@ -260,9 +260,9 @@ public class Robot {
     }
 
     /**
-    * Devuelve el estado de suspensión del Robot
+    * Devuelve el estado de suspension del Robot
     *
-    * @return Estado de suspensión del Robot
+    * @return Estado de suspension del Robot
     */
     public EstadoRobot getModoSuspender() {
         return modoSuspender;
@@ -278,9 +278,9 @@ public class Robot {
     }
 
     /**
-    * Devuelve el estado de atención al cliente del Robot
+    * Devuelve el estado de atencion al cliente del Robot
     *
-    * @return Estado de atención del Robot
+    * @return Estado de atencion del Robot
     */
     public EstadoRobot getModoAtender() {
         return modoAtender;

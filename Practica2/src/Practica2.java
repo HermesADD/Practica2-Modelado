@@ -9,9 +9,9 @@ import Robots.Robot;
 public class Practica2 {
 
     /**
-     * Operación principal del programa.
+     * Operacion principal del programa.
      *
-     * @param args Argumentos en la línea de comandos
+     * @param args Argumentos en la linea de comandos
      *
      */
     public static void main(String[] args) {

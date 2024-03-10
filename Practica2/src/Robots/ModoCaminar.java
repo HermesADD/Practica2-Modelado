@@ -11,7 +11,7 @@ import Menu.*;
  */
 public class ModoCaminar implements EstadoRobot{
 
-    // Referencia al robot que está en estado caminar.
+    // Referencia al robot que esta en estado caminar.
     private Robot robot;
 
     /**
@@ -25,7 +25,7 @@ public class ModoCaminar implements EstadoRobot{
 
     /**
      * Impide que el robot atienda mientras camina.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void atender() {
@@ -44,7 +44,7 @@ public class ModoCaminar implements EstadoRobot{
     }
 
     /**
-     * Realiza la acción de caminar del robot hacia el cliente.
+     * Realiza la accion de caminar del robot hacia el cliente.
      * Si el robot no ha llegado, reduce la distancia y muestra un mensaje.
      * Una vez que el robot llega, cambia su estado al modo atender.
      */
@@ -54,8 +54,8 @@ public class ModoCaminar implements EstadoRobot{
         if (!robot.getMesaCliente()) {
             // Reduce la distancia entre el robot y el cliente
             robot.reducirDistancia();
-            // Muestra un mensaje indicando que el robot se está acercando
-            System.out.println("El robot se está acercando.");
+            // Muestra un mensaje indicando que el robot se esta acercando
+            System.out.println("El robot se esta acercando.");
         } else {
             // Muestra un mensaje indicando que el robot ha llegado hacia el cliente
             System.out.println("El robot ha llegado. \nSe cambia al modo atender.");
@@ -66,7 +66,7 @@ public class ModoCaminar implements EstadoRobot{
 
     /**
      * Impide que el robot tome la orden mientras camina.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void tomarOrden(Menu[] listaMenus) {
@@ -75,7 +75,7 @@ public class ModoCaminar implements EstadoRobot{
 
     /**
      * Impide que el robot cocine mientras camina.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void cocinar() {
@@ -84,7 +84,7 @@ public class ModoCaminar implements EstadoRobot{
 
     /**
      * Impide que el robot sirva mientras camina.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void servir() {
@@ -93,7 +93,7 @@ public class ModoCaminar implements EstadoRobot{
 
     /**
      * Imprime el estado actual del robot.
-     * Indica que el robot está en modo caminar.
+     * Indica que el robot esta en modo caminar.
      */
     @Override
     public void imprimirEstado() {

@@ -11,7 +11,7 @@ import Menu.*;
  */
 public class ModoServir implements EstadoRobot{
 
-    // Referencia al robot que está en estado caminar.
+    // Referencia al robot que esta en estado caminar.
     private Robot robot;
 
     /**
@@ -25,7 +25,7 @@ public class ModoServir implements EstadoRobot{
 
     /**
      * Impide que el robot atienda mientras sirve.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void atender() {
@@ -34,7 +34,7 @@ public class ModoServir implements EstadoRobot{
 
     /**
      * Impide que el robot se suspenda mientras sirve.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void suspender() {
@@ -43,7 +43,7 @@ public class ModoServir implements EstadoRobot{
 
     /**
      * Impide que el robot camine mientras sirve.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void caminar() {
@@ -52,7 +52,7 @@ public class ModoServir implements EstadoRobot{
 
     /**
      * Impide que el robot tome ordenes mientras sirve.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void tomarOrden(Menu[] listaMenus) {
@@ -61,7 +61,7 @@ public class ModoServir implements EstadoRobot{
 
     /**
      * Impide que el robot cocine mientras sirve.
-     * Imprime un mensaje indicando que la acción no es posible.
+     * Imprime un mensaje indicando que la accion no es posible.
      */
     @Override
     public void cocinar() {
@@ -69,8 +69,8 @@ public class ModoServir implements EstadoRobot{
     }
 
     /**
-     * Realiza la acción de servir del robot.
-     * Este método imprime un mensaje indicando que el robot ha comenzado a servir.
+     * Realiza la accion de servir del robot.
+     * Este metodo imprime un mensaje indicando que el robot ha comenzado a servir.
      * Tras completar el servicio, cambia el estado del robot al modo suspender.
      */
     @Override
@@ -81,7 +81,7 @@ public class ModoServir implements EstadoRobot{
 
     /**
      * Imprime el estado actual del robot.
-     * Indica que el robot está en modo servir.
+     * Indica que el robot esta en modo servir.
      */
     @Override
     public void imprimirEstado() {
