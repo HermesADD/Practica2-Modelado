@@ -29,7 +29,7 @@ public class MenuGeneral extends Menu{
    /**
     * Cadena que representa la descripcion del menu
     */
-   private String descripcion = "Nuestras hamburguesas clasicas, servidas todos los dias del año!!!";
+   private String descripcion = "Nuestras hamburguesas clasicas, servidas todos los dias del ano!!!";
 
    /**
     * Constructor del menu general

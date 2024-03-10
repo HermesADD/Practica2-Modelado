@@ -17,7 +17,7 @@ import java.util.Hashtable;
 public class MenuEspecial extends Menu{
 
     /**
-    * Hashtable con los platillos del menú
+    * Hashtable con los platillos del menu
     */
     private Hashtable<Integer, Hamburguesa> hamburguesas = new Hashtable<>();
 

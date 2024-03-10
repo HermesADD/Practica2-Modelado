@@ -1,7 +1,7 @@
 package Hamburguesa;
 
 /**
-* Clase que simula un platillo del menú
+* Clase que simula un platillo del menu
 *
 * @author Hermes
 * @author Steve

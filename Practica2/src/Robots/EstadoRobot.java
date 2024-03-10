@@ -4,8 +4,8 @@ import Hamburguesa.*;
 import Menu.*;
 
 /**
- * La Interfaz EstadoRobot define los métodos que deben ser implementados por los 
- * diferentes estados de un robot. Estos métodos corresponden a las acciones que 
+ * La Interfaz EstadoRobot define los metodos que deben ser implementados por los 
+ * diferentes estados de un robot. Estos metodos corresponden a las acciones que 
  * el robot puede realizar y los cambios de estado que puede experimentar.
  */
 public interface EstadoRobot {
@@ -41,7 +41,7 @@ public interface EstadoRobot {
     public void servir();
 
     /**
-     * Imprime el estado actual del robot, proporcionando información sobre su 
+     * Imprime el estado actual del robot, proporcionando informacion sobre su 
      * actividad o estado de reposo.
      */
     public void imprimirEstado();
