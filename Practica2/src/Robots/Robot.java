@@ -8,7 +8,7 @@ import Menu.*;
  * Clase que simula al robot 
  * @author Hermes
  * @author Steve
- * @author Emilio
+ * @author Emiliano
  */
 public class Robot {
   

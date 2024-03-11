@@ -6,7 +6,7 @@ import java.util.Iterator;
  * 
  * @author Hermes
  * @author Steve
- * @author Emilio
+ * @author Emiliano
  */
 public class IteradorArreglo implements Iterator{
 
