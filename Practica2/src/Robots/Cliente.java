@@ -3,7 +3,7 @@ package Robots;
  * Clase que simula un cliente  
  * @author Hermes
  * @author Steve
- * @author Emilio
+ * @author Emiliano
  */
 
 public class Cliente {

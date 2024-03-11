@@ -4,7 +4,7 @@ package Hamburguesa;
  * Clase que muestra el proceso de elaboracion de Hamburguesa
  * @author Hermes
  * @author Steve
- * @author Emilio
+ * @author Emiliano
  */
 
 public abstract class Receta {
